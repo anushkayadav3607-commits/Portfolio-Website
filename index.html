@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Personal Portfolio Website</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f4f4f4;
+}
+
+header{
+    background:#333;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+nav{
+    margin-top:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:10px;
+    padding:8px 15px;
+    border-radius:5px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    background:white;
+    color:black;
+}
+
+section{
+    background:white;
+    margin:20px;
+    padding:25px;
+    border-radius:10px;
+}
+
+h2{
+    margin-bottom:15px;
+}
+
+.profile{
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    display:block;
+    margin:auto;
+    object-fit:cover;
+}
+
+.placeholder{
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    background:#ccc;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:auto;
+    font-size:20px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table,th,td{
+    border:1px solid black;
+}
+
+th,td{
+    padding:10px;
+    text-align:center;
+}
+
+#projects ul{
+    display:flex;
+    justify-content:space-around;
+    list-style:none;
+    flex-wrap:wrap;
+}
+
+#projects li{
+    background:#eaeaea;
+    padding:15px;
+    margin:10px;
+    border-radius:5px;
+}
+
+input,textarea{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+}
+
+button{
+    background:blue;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:darkblue;
+}
+
+@media(max-width:768px){
+
+    nav{
+        display:flex;
+        flex-direction:column;
+    }
+
+    #projects ul{
+        flex-direction:column;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Anushka Yadav</h1>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="home">
+    <h2>Home</h2>
+
+    <!-- If image doesn't work, this still looks fine -->
+   <img src="profile.jpeg" alt="My Photo" width="200">
+    <br>
+
+    <p>Welcome to my personal portfolio website. I am passionate about web development and programming.</p>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+
+    <p>
+        I am a student interested in Web Development, HTML, CSS and Programming.
+        I enjoy creating websites and learning new technologies.
+    </p>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+
+    <table>
+        <tr>
+            <th>Skill</th>
+            <th>Level</th>
+        </tr>
+
+        <tr>
+            <td>HTML</td>
+            <td>Intermediate</td>
+        </tr>
+
+        <tr>
+            <td>CSS</td>
+            <td>Intermediate</td>
+        </tr>
+
+        <tr>
+            <td>C++</td>
+            <td>Intermediate</td>
+        </tr>
+    </table>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+
+    <ul>
+        <li>Portfolio Website</li>
+        <li>Calculator Application</li>
+        <li>Student Management System</li>
+    </ul>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+
+    <form>
+        <label>Name</label>
+        <input type="text">
+
+        <br><br>
+
+        <label>Email</label>
+        <input type="email">
+
+        <br><br>
+
+        <label>Message</label>
+        <textarea rows="5"></textarea>
+
+        <br><br>
+
+        <button type="submit">Send</button>
+    </form>
+</section>
+
+</body>
+</html>
